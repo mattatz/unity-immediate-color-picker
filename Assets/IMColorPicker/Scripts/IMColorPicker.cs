@@ -43,7 +43,7 @@ namespace imColorPicker
 
         float h = 0f, s = 1f, v = 1f;
 
-        Rect windowRect = new Rect(20, 20, 175, 100);
+        Rect windowRect = new Rect(20, 20, 165, 100);
 
         GUIStyle previewStyle;
         GUIStyle labelStyle;
@@ -95,9 +95,9 @@ namespace imColorPicker
             presetSaveStyle.normal.background = button;
         }
 
-        public void DrawWindow ()
+        public void DrawWindow (int id = 0, string title = "IMColorPicker")
         {
-            windowRect = GUI.Window(0, windowRect, DrawColorPickerWindow, "IMColorPicker");
+            windowRect = GUI.Window(id, windowRect, DrawColorPickerWindow, title);
         }
 
         void DrawColorPickerWindow(int windowID)
