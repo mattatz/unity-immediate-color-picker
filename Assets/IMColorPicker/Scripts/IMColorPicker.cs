@@ -72,7 +72,7 @@ namespace imColorPicker
             circle = Resources.Load<Texture2D>("imCircle");
             rightArrow = Resources.Load<Texture2D>("imRight");
             leftArrow = Resources.Load<Texture2D>("imLeft");
-            button = Resources.Load<Texture2D>("imBorder2");
+            button = Resources.Load<Texture2D>("imBorder");
 
             previewStyle = new GUIStyle();
             previewStyle.normal.background = Texture2D.whiteTexture;
